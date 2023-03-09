@@ -1,5 +1,5 @@
 import boto3
-ec2 = boto3.client('ec2')
+ec2 = boto3.client('ec2',region_name='us-west-2')
 response = ec2.describe_instances()
 instance_ids = [reservation['Instances'][0]['InstanceId'] for reservation in response['Reservations'] for instance in reservation['Instances']]
 for instance_id in instance_ids:
