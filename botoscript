@@ -10,6 +10,6 @@ for instance_id in instance_ids:
                 'Key': 'myTag',
                 'Value': 'myValue'
             },
-            # Add additional tags as necessary
+            
         ]
     )
